@@ -12,6 +12,9 @@ class HomeScreen extends StatelessWidget{
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Nubito'
+      ),
       home: SplashScreen(),
     );
   }

@@ -3,6 +3,8 @@ import 'package:stylerrapp/screens/Categories.dart';
 import 'package:stylerrapp/screens/LogIn.dart';
 import 'dart:async';
 
+import 'package:stylerrapp/screens/NameScreen.dart';
+
 class SplashScreen extends StatefulWidget {
 
 
@@ -30,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _navigateToScreen(){
     Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (BuildContext context) => CategoriesScreen())
+        builder: (BuildContext context) => NameScreen())
     );
   }
 

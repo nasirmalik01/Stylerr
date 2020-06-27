@@ -59,18 +59,12 @@ flutter:
   fonts:
     - family: Lobster-Regular
       fonts:
-        - asset: fonts/Lobster-Regular.ttf
-    - family: Nunito-Regular
+        - asset: assets/fonts/Lobster-Regular.ttf
+    - family: Nunito
       fonts:
-        - asset: fonts/Nunito-Regular.ttf
-    - family: Nunito-Bold
-      fonts:
-        - asset: fonts/Nunito-Bold.ttf
-    - family: Nunito-SemiBold
-      fonts:
-        - asset: fonts/Nunito-Black.ttf
-    - family: Nunito-Regular
-      fonts:
-        - asset: fonts/Nunito-Black.ttf
+        - asset: assets/fonts/Nunito-Regular.ttf
+        - asset: assets/fonts/Nunito-Bold.ttf
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+        - asset: assets/fonts/Nunito-Regular.ttf
    # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
