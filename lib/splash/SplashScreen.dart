@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../Screens/LogIn.dart';
-import '../Screens/Categories.dart';
+import 'package:stylerrapp/screens/Categories.dart';
+import 'package:stylerrapp/screens/LogIn.dart';
 import 'dart:async';
 
 class SplashScreen extends StatefulWidget {
@@ -30,13 +30,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _navigateToScreen(){
     Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (BuildContext context) => SignUpScreen())
+        builder: (BuildContext context) => CategoriesScreen())
     );
   }
 
   void _navigateToLogIn(){
     Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (BuildContext context) => LogInScreen())
+        builder: (BuildContext context) => LoginScreen())
     );
   }
 
