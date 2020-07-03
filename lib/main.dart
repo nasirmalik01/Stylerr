@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylerrapp/screens/NameScreen.dart';
 import 'package:stylerrapp/splash/SplashScreen.dart';
 
 
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget{
       theme: ThemeData(
         fontFamily: 'Nubito'
       ),
-      home: SplashScreen(),
+      home: NameScreen(),
     );
   }
 

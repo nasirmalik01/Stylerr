@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stylerrapp/screens/EmailScreen.dart';
 
-class NameScreen extends StatelessWidget {
+
+class MobileNumberScreen extends StatelessWidget {
   Text TextValues(
       {String title, double fontSize, Color color, FontWeight fontWeight}) {
     return Text(
@@ -47,13 +47,13 @@ class NameScreen extends StatelessWidget {
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
                               fontSize: 25,
-                              title: 'What\'s your name ?')),
+                              title: 'Enter your mobile number')),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 20.0, right: 10.0),
                       child: TextValues(
                           title:
-                              'Your name helps your stylist / barber to confirm who have booked with them',
+                              'Enter your mobile number, to create an account or log in',
                           fontSize: 15,
                           fontWeight: FontWeight.normal,
                           color: Colors.grey),
@@ -63,7 +63,7 @@ class NameScreen extends StatelessWidget {
                           const EdgeInsets.only(left: 20.0, right: 20, top: 20),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: 'Enter your full name',
+                          hintText: '334 080 3550',
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.grey),
                           ),
@@ -74,81 +74,58 @@ class NameScreen extends StatelessWidget {
                             fontFamily: 'Nubito',
                             color: Colors.grey,
                           ),
+                          prefixIcon: Icon(Icons.format_list_numbered),
+                          prefixText: '+92    ',
+                          prefixStyle: TextStyle(
+                              color: Colors.black, fontWeight: FontWeight.bold,fontSize: 16),
                         ),
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
                             fontFamily: 'Nunito'),
+                        keyboardType: TextInputType.number,
+                        autofocus: true,
                       ),
                     ),
                   ],
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * 0.44),
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                      child: TextValues(
-                          title: 'By signing up with Stylerr, you agree to our',
-                          fontSize: 12,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.grey),
-                    ),
-                    Center(
-                      child: TextValues(
-                          title: 'terms and conditions',
-                          fontSize: 15,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.blue),
-                    ),
-                    SizedBox(
-                      height: 22,
-                    ),
-                    Center(
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * 0.85,
-                        decoration: BoxDecoration(boxShadow: [
-                          BoxShadow(
-                              color: Colors.black12,
-                              blurRadius: 25,
-                              spreadRadius: 0.5,
-                              offset: Offset(0, 2))
-                        ]),
-                        child: Ink(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [Color(0xFF2690DA), Color(0xFF2AB4FF)],
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                            ),
-                            borderRadius: BorderRadius.circular(30.0),
+                  margin: EdgeInsets.only(
+                      top: MediaQuery.of(context).size.height * 0.55),
+                  child: Center(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width * 0.85,
+                      decoration: BoxDecoration(boxShadow: [
+                        BoxShadow(
+                            color: Colors.black12,
+                            blurRadius: 25,
+                            spreadRadius: 0.5,
+                            offset: Offset(0, 2))
+                      ]),
+                      child: Ink(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Color(0xFF2690DA), Color(0xFF2AB4FF)],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
                           ),
-                          child: MaterialButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => EmailScreen()));
-                            },
-
-                            child: Text(
-                              'Create Account',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'Nunito',
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w600),
-                            ),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                        child: MaterialButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Continue',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Nunito',
+                                fontSize: 20,
+                                fontWeight: FontWeight.w600),
                           ),
                         ),
                       ),
-                    )
-                  ],
-                ),
-              ),
+                    ),
+                  )),
             ],
           ),
         ],

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "551698331169",
+    "firebase_url": "https://stylerr-a9148.firebaseio.com",
+    "project_id": "stylerr-a9148",
+    "storage_bucket": "stylerr-a9148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551698331169:android:9080117fcb9d8428335560",
+        "android_client_info": {
+          "package_name": "com.developmentlinkonix.stylerrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551698331169-o0t9tg67jdbc717ddm5qtqukdmf8bteu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATEUPnIS-KSbgSsUeUq-oOogoT98xxwso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551698331169-o0t9tg67jdbc717ddm5qtqukdmf8bteu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

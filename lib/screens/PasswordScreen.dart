@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stylerrapp/screens/EmailScreen.dart';
+import 'package:stylerrapp/screens/OTP_VerificationScreen.dart';
 
-class NameScreen extends StatelessWidget {
+class PasswordScreen extends StatelessWidget {
   Text TextValues(
       {String title, double fontSize, Color color, FontWeight fontWeight}) {
     return Text(
@@ -27,15 +27,19 @@ class NameScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    IconButton(
-                      icon: Icon(
-                        Icons.arrow_back,
-                        color: Color(0xFF2AB4FF),
-                        size: 30,
-                      ),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
+                    Row(
+                      children: <Widget>[
+                        IconButton(
+                          icon: Icon(
+                            Icons.arrow_back,
+                            color: Color(0xFF2AB4FF),
+                            size: 30,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                      ],
                     ),
                     Container(
                       margin: EdgeInsets.only(
@@ -47,23 +51,15 @@ class NameScreen extends StatelessWidget {
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
                               fontSize: 25,
-                              title: 'What\'s your name ?')),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20.0, right: 10.0),
-                      child: TextValues(
-                          title:
-                              'Your name helps your stylist / barber to confirm who have booked with them',
-                          fontSize: 15,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.grey),
+                              title: 'Create a strong password ?')),
                     ),
                     Padding(
                       padding:
                           const EdgeInsets.only(left: 20.0, right: 20, top: 20),
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
-                          hintText: 'Enter your full name',
+                          hintText: 'Enter your password',
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.grey),
                           ),
@@ -81,31 +77,78 @@ class NameScreen extends StatelessWidget {
                             fontFamily: 'Nunito'),
                       ),
                     ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 20.0, right: 20, top: 20),
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          color: Color(0xFFF0EFEF),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 10.0, left: 10, right: 10),
+                              child: TextValues(
+                                  title:
+                                      'For security your password needs to be atleast 8 characters.',
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 13,
+                                  color: Colors.black),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 5.0, left: 10, right: 10),
+                              child: TextValues(
+                                  title: 'consisting of:',
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 13,
+                                  color: Colors.black),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 5.0, left: 10, right: 10),
+                              child: TextValues(
+                                  title: 'upper and lower case letters',
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 13,
+                                  color: Colors.black),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 5.0, left: 10, right: 10, bottom: 10),
+                              child: TextValues(
+                                  title: 'numbers',
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 13,
+                                  color: Colors.black),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
               Container(
                 margin: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * 0.44),
+                    top: MediaQuery.of(context).size.height * 0.33),
                 child: Column(
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+                    GestureDetector(
+                      onTap: () {},
                       child: TextValues(
-                          title: 'By signing up with Stylerr, you agree to our',
-                          fontSize: 12,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.grey),
-                    ),
-                    Center(
-                      child: TextValues(
-                          title: 'terms and conditions',
-                          fontSize: 15,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.blue),
+                          title: 'Have an invitation Code?',
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15),
                     ),
                     SizedBox(
-                      height: 22,
+                      height: MediaQuery.of(context).size.height * 0.032,
                     ),
                     Center(
                       child: Container(
@@ -131,11 +174,12 @@ class NameScreen extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => EmailScreen()));
+                                      builder: (context) =>
+                                          OTPVerificationScreen()));
                             },
 
                             child: Text(
-                              'Create Account',
+                              'Continue',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'Nunito',
@@ -145,10 +189,10 @@ class NameScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
-              ),
+              )
             ],
           ),
         ],
