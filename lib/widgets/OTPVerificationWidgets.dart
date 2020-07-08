@@ -6,8 +6,8 @@ Container OTPCodes(BuildContext context){
         borderRadius: BorderRadius.circular(5.0),
         border: Border.all(color: Colors.black54)
     ),
-    height: MediaQuery.of(context).size.height*0.09,
-    width: MediaQuery.of(context).size.width*0.15,
+    height: MediaQuery.of(context).size.height*0.07,
+    width: MediaQuery.of(context).size.width*0.12,
     child: Center(
       child: Text(
         '4',

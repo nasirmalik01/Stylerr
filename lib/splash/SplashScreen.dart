@@ -3,7 +3,8 @@ import 'package:stylerrapp/screens/Categories.dart';
 import 'package:stylerrapp/screens/LogIn.dart';
 import 'dart:async';
 
-import 'package:stylerrapp/screens/NameScreen.dart';
+import 'package:stylerrapp/screens/signup_screens/NameScreen.dart';
+
 
 class SplashScreen extends StatefulWidget {
 
