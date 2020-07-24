@@ -5,6 +5,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stylerrapp/screens/HomePageScreen.dart';
 import 'package:stylerrapp/screens/LogIn.dart';
+import 'package:stylerrapp/screens/LoginMethodsScreen.dart';
 import 'package:stylerrapp/screens/signup_screens/EmailScreen.dart';
 import 'package:stylerrapp/screens/signup_screens/NameScreen.dart';
 import 'package:stylerrapp/screens/signup_screens/OTP_VerificationScreen.dart';
